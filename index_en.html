@@ -4,143 +4,163 @@
   <meta charset="UTF-8">
   <title>Black Mesa Research Facility</title>
   <style>
-    body {
-      background-color: #0b0b0b;
-      color: #eeeeee;
-      font-family: 'Segoe UI', sans-serif;
-      line-height: 1.7;
-      padding: 40px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    img {
-      max-width: 100%;
-      margin: 20px 0;
-    }
-
-    h1, h2 {
-      color: #ffffff;
-    }
-
-    .redacted {
-      filter: grayscale(1) brightness(0.5);
-      border: 2px dashed red;
-      padding: 5px;
-      max-width: 300px;
-    }
-
-    a {
-      color: #ffcc00;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .logo {
-      max-width: 400px;
-    }
-
-    .lang-switch {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
+    body { background:#000; color:#fff; font-family:Arial,sans-serif; margin:0; line-height:1.6; }
+    header { text-align:center; padding:20px; background:#111; }
+    header img { height:80px; }
+    h1,h2 { margin-top:0.6em; }
+    section { padding:20px; border-bottom:1px solid #333; }
+    .admins { display:flex; gap:16px; flex-wrap:wrap; }
+    .admin-card{ background:#111; border:1px solid #333; border-radius:10px; padding:12px; width:300px; }
+    .admin-card img{ width:100%; max-height:160px; object-fit:cover; border:2px solid #555; }
+    .accordion{ background:#222; border:1px solid #333; padding:10px; margin:6px 0; cursor:pointer; width:100%; text-align:left; }
+    .accordion:hover{ background:#333; }
+    .accordion::after{ content:"+"; float:right; }
+    .accordion.active::after{ content:"–"; }
+    .panel{ display:none; padding:10px 16px; background:#111; border:1px solid #333; margin-bottom:10px; }
+    a { color:#0af; text-decoration:none; }
+    a:hover { text-decoration:underline; }
   </style>
 </head>
 <body>
-  <div class="lang-switch">
-    <a href="index.html">KO</a>
-  </div>
+  <header>
+    <img src="Bmwikifront.png" alt="Black Mesa Logo">
+    <h1>Black Mesa Research Facility</h1>
+    <div style="margin-top:10px;">
+      <a href="index.html" style="color:#0af; margin-right:10px;">KO</a> | 
+      <a href="index_en.html" style="color:#0af; margin-left:10px;">EN</a>
+    </div>
+  </header>
 
-  <img src="Bmwikifront.png" alt="Black Mesa Logo" class="logo">
+  <!-- Introduction -->
+  <section>
+    <h1>What is Black Mesa?</h1>
+    <p>
+      The Black Mesa Research Facility, located deep within the New Mexico desert, is a world-class research complex built within a decommissioned missile silo installation.<br>
+      Officially recognized as an Air Force base, the facility conducts extensive scientific programs ranging from pure research to applied technologies.
+    </p>
 
-  <h1>What is Black Mesa?</h1>
+    <h2>Fields of Research</h2>
+    <ul>
+      <li>Theoretical Physics and Applied Mathematics</li>
+      <li>Radiation and Nuclear Research</li>
+      <li>Laser Engineering and Fluid Dynamics</li>
+      <li>Robotics and Genetics</li>
+      <li>Zoology and Biology</li>
+      <li>Chemistry and Advanced Materials</li>
+      <li>Hydrodynamics and Energy Research</li>
+    </ul>
+    <p>Additionally, Black Mesa contributes to future space science through HEV suit development, rocket and satellite launch testing, and the repurposing of retired ICBM launch facilities.</p>
 
-  <p>
-    The Black Mesa Research Facility is a world-class research complex located deep in the New Mexico desert, constructed by repurposing an old missile silo installation.<br>
-    While it is known publicly as an Air Force base, the internal operations span a vast range of pure and applied sciences.
-  </p>
+    <h2>Access Points</h2>
+    <p>Access to Black Mesa is strictly limited and permitted only through designated checkpoints.</p>
+    <img src="20250907140800_1.jpg" 
+     alt="Black Mesa Entrance" 
+     style="max-width:600px; height:auto; display:block; margin:10px auto; border:2px solid #444; border-radius:6px;">
 
-  <h2>Research Areas</h2>
-  <ul>
-    <li>Theoretical Physics and Applied Mathematics</li>
-    <li>Radiation and Nuclear Research</li>
-    <li>Laser Engineering and Hydraulics</li>
-    <li>Robotics and Genetics</li>
-    <li>Zoology and Biology</li>
-    <li>Chemistry and Advanced Materials</li>
-    <li>Hydropower and Energy Studies</li>
-  </ul>
+    <h2>Government Cooperation</h2>
+    <ul>
+      <li><b>Department of Energy (DOE):</b> Nuclear, radiation, and reactor security oversight</li>
+      <li><b>Department of Defense (DOD):</b> Military technology research and rocket testing support</li>
+    </ul>
+    <p>The United States Marine Corps and DOE Security Forces ensure the safety of the facility.</p>
 
-  <p>Additionally, we contribute to future space science through HEV suit development, rocket and satellite launch testing, and the reuse of decommissioned ICBM launch facilities.</p>
+    <h2>Self-Sufficient Operations</h2>
+    <ul>
+      <li>Security: Internal police, SSF, FRTOU tactical units</li>
+      <li>Fire & Rescue: Dedicated firefighting and emergency response teams</li>
+      <li>Medical: On-site hospital, psychiatric services, emergency care</li>
+      <li>Infrastructure: Independent power plant, airport, BMTA (Transit Authority), BMAA (Aviation Authority)</li>
+      <li>Support: Cafeterias, dormitories, catering services</li>
+    </ul>
 
-  <h2>Leadership History</h2>
-  <ul>
-    <li>
-      Dr. Reagan Strauss (1955–1966)<br>
-      <img src="redaction-seal-stamp-grunge-vector-45043819.png" alt="Redacted" class="redacted"><br>
-      Founding director, known for authoritative leadership.
-    </li>
-    <li>
-      Dr. Kalevi Pulkkinen (1966–1992)<br>
-      <img src="redaction-seal-stamp-grunge-vector-45043819.png" alt="Redacted" class="redacted"><br>
-      Most successful administrator in terms of research efficiency and internal trust.
-    </li>
-    <li>
-      Dr. Wallace Breen (1992–Present)<br>
-      <img src="20250907140517_1.jpg" alt="Dr. Breen Image">
-	  A successful administrator who ensuring stability through diplomacy.
-    </li>
-  </ul>
+    <h2>Research and Experimental Programs</h2>
+    <p>The facility is engaged in a broad spectrum of scientific and technological projects, including:</p>
+    <ul>
+      <li>Theoretical physics, radiation research, laser, fluid dynamics</li>
+      <li>Robotics, genetics, zoology, chemistry</li>
+      <li>Hydrodynamics, applied mathematics, materials science</li>
+      <li>HEV/PCV development and military equipment research</li>
+      <li>Rocket and satellite launch trials</li>
+    </ul>
+  </section>
 
-  <h2>One of the Few Entrances</h2>
-  <p>
-    Access to the Black Mesa Facility is highly restricted. Only a few certified checkpoints exist for authorized entry.
-  </p>
-  <img src="20250907140800_1.jpg" alt="Black Mesa Entrance">
+  <!-- History -->
+  <section>
+    <h2>History</h2>
+    <p>The Black Mesa Research Facility (BMRF) was founded in 1955 by the Black Mesa Corporation. Built on a model of public–private partnership, it has since pursued extensive scientific and engineering programs. Following expansion in the 1960s, Black Mesa broadened its infrastructure and collaboration, evolving into an integrated complex supporting advanced research, engineering, manufacturing, operations, and security.</p>
+  </section>
 
-  <h2>Government Collaboration</h2>
-  <ul>
-    <li><b>DOE (Department of Energy):</b> Oversees nuclear, radiation, and reactor security.</li>
-    <li><b>DOD (Department of Defense):</b> Supports military technology research and rocket testing.</li>
-  </ul>
-  <p>
-    The U.S. Marine Corps and DOE security forces ensure operational safety.
-  </p>
+  <!-- Administrators -->
+  <section>
+    <h2>Administrators</h2>
+    <div class="admins">
+      <div class="admin-card">
+        <img src="redaction-seal-stamp-grunge-vector-45043819.png" alt="REDACTED">
+        <h3>Dr. Reagan Strauss (1955–1966)</h3>
+        <p>The founding administrator of Black Mesa, credited with establishing the foundation of the facility. Retired in 1966 citing health concerns.</p>
+      </div>
+      <div class="admin-card">
+        <img src="redaction-seal-stamp-grunge-vector-45043819.png" alt="REDACTED">
+        <h3>Dr. Kalevi Pulkkinen (1966–1982)</h3>
+        <p>Recognized as one of the most accomplished administrators in Black Mesa history. Retired under normal circumstances.</p>
+      </div>
+      <div class="admin-card">
+        <img src="20250907140517_1.jpg" alt="Wallace Breen">
+        <h3>Dr. Wallace Breen (1982–Present)</h3>
+        <p>Exercising strong diplomatic ability, Dr. Breen has overseen significant growth and continues to serve as Administrator.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Departments</h2>
-  <ul>
-    <li><a href="https://black-mesa-security-officer.github.io/blackmesa-security/index_en.html">Security	Division</a></li>
-    <li><a href="https://black-mesa-security-officer.github.io/blackmesa-engineering/index_en.html">Engineering & Manufacturing Division</a></li>
-    <li><a href="https://black-mesa-security-officer.github.io/blackmesa-medical/index_en.html">Medical Division</a></li>
-    <li><a href="https://black-mesa-security-officer.github.io/blackmesa-research/index_en.html">Research & Development Sector</a></li>
-	<li><a href="https://black-mesa-security-officer.github.io/blackmesa-doe/index_en.html">DOE Security force</a></li>
-	<li><a href="https://black-mesa-security-officer.github.io/blackmesa-ssf/index_en.html">Special Security force</a></li>
-  </ul>
-  
-  <h2>Self-Sufficient Operations</h2>
-  <ul>
-    <li>Security: Internal police, SSF, and FRTOU tactical units</li>
-    <li>Fire & Rescue: Dedicated firefighting and emergency teams</li>
-    <li>Medical: Hospital, psychiatric care, emergency treatment</li>
-    <li>Infrastructure: In-house power plants, airfields, logistics (BMTA), and aviation authority (BMAA)</li>
-    <li>Support: Internal cafeterias, dormitories, and catering services</li>
-  </ul>
+  <!-- Organization -->
+  <section>
+    <h2>Organization</h2>
+    <button class="accordion">Administrative Department — Administrator: Dr. Wallace Breen</button>
+    <div class="panel">
+      <button class="accordion"><a href="https://black-mesa-security-officer.github.io/blackmesa-security/index.html">Security Division</a> — Commander: Raymond Cole</button>
+      <div class="panel">
+        <p>Transit Authority — Chief: Michael “Mike” Daugherty</p>
+        <p>Aviation Authority — Chief: Karen Alvarez</p>
+        <p>General Security</p>
+        <p><a href="https://black-mesa-security-officer.github.io/blackmesa-ssf/index.html">Special Security Force (SSF)</a> — Commander: Colin Mercer</p>
+      </div>
+      <button class="accordion"><a href="https://black-mesa-security-officer.github.io/blackmesa-research/index.html">Research & Development Sector</a> — Director: Dr. Harold G. Kleiner</button>
+      <div class="panel">
+        <p>Scientific Teams</p>
+        <p><a href="https://black-mesa-security-officer.github.io/blackmesa-engineering/index.html">Engineering & Manufacturing Division</a> — Director: Eng. Marcus Levington</p>
+      </div>
+      <button class="accordion">Facility Operations — Director: Robert McKenna</button>
+      <div class="panel">
+        <p>Hospitality & Catering — Chief: Helen Ward</p>
+        <p>Waste Disposal — Chief: Frank Kowalski</p>
+        <p>Maintenance & Inspections — Chief: George Ramirez</p>
+        <p>IT & Network — Chief: Samuel Cho</p>
+        <p>Logistics & Transportation — Chief: David Harlow</p>
+        <p>Aviation Ops — Chief: Col. Richard Halpern</p>
+        <p>Reactor Ops — Chief: Dr. Elias Brandt</p>
+        <p><a href="https://black-mesa-security-officer.github.io/blackmesa-medical/index.html">Medical Division</a> — Chief: Dr. Linda Voss</p>
+      </div>
+      <button class="accordion">First Response Incident Command — Commander: Raymond Cole</button>
+      <div class="panel">
+        <p>Fire & Rescue — Chief: Thomas Delgado</p>
+        <p>Tactical Operations Unit (FRTOU) — Commander: Capt. Alan Rourke</p>
+      </div>
+      <p><a href="https://black-mesa-security-officer.github.io/blackmesa-doe/index.html">DOE Security Force</a> — External Personnel</p>
+    </div>
+  </section>
 
-  <h2>Fields of Research & Experimentation</h2>
-  <p>Our facility engages in an extensive variety of scientific and technical projects:</p>
-  <ul>
-    <li>Theoretical Physics, Radiation Studies, Lasers, Hydraulics</li>
-    <li>Robotics, Genetics, Zoology, Chemistry</li>
-    <li>Hydropower, Applied Mathematics, Materials Science</li>
-    <li>HEV/PCV Development and Military Equipment</li>
-    <li>Rocket and Satellite Launch Testing</li>
-  </ul>
-
-  <hr>
-  <p style="text-align: center; font-size: 14px;">© 2025 Black Mesa Research Facility. All Rights Reserved.</p>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function(e) {
+        if (e.target.tagName.toLowerCase() === 'a') return;
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel) {
+          panel.style.display = (panel.style.display === "block") ? "none" : "block";
+        }
+      });
+    }
+  </script>
 </body>
 </html>

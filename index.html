@@ -4,137 +4,163 @@
   <meta charset="UTF-8">
   <title>블랙 메사 연구 시설</title>
   <style>
-    body {
-      background-color: #0b0b0b;
-      color: #eeeeee;
-      font-family: 'Segoe UI', sans-serif;
-      line-height: 1.7;
-      padding: 40px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    img {
-      max-width: 100%;
-      margin: 20px 0;
-    }
-
-    h1, h2 {
-      color: #ffffff;
-    }
-
-    .redacted {
-      filter: grayscale(1) brightness(0.5);
-      border: 2px dashed red;
-      padding: 5px;
-      max-width: 300px;
-    }
-
-    a {
-      color: #ffcc00;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .logo {
-      max-width: 400px;
-    }
-
-    .lang-switch {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
+    body { background:#000; color:#fff; font-family:Arial,sans-serif; margin:0; line-height:1.6; }
+    header { text-align:center; padding:20px; background:#111; }
+    header img { height:80px; }
+    h1,h2 { margin-top:0.6em; }
+    section { padding:20px; border-bottom:1px solid #333; }
+    .admins { display:flex; gap:16px; flex-wrap:wrap; }
+    .admin-card{ background:#111; border:1px solid #333; border-radius:10px; padding:12px; width:300px; }
+    .admin-card img{ width:100%; max-height:160px; object-fit:cover; border:2px solid #555; }
+    .accordion{ background:#222; border:1px solid #333; padding:10px; margin:6px 0; cursor:pointer; width:100%; text-align:left; }
+    .accordion:hover{ background:#333; }
+    .accordion::after{ content:"+"; float:right; }
+    .accordion.active::after{ content:"–"; }
+    .panel{ display:none; padding:10px 16px; background:#111; border:1px solid #333; margin-bottom:10px; }
+    a { color:#0af; text-decoration:none; }
+    a:hover { text-decoration:underline; }
   </style>
 </head>
 <body>
-  <div class="lang-switch">
-    <a href="index_en.html">EN</a>
-  </div>
+  <header>
+    <img src="Bmwikifront.png" alt="Black Mesa Logo">
+    <h1>블랙 메사 연구 시설</h1>
+    <div style="margin-top:10px;">
+      <a href="index.html" style="color:#0af; margin-right:10px;">KO</a> | 
+      <a href="index_en.html" style="color:#0af; margin-left:10px;">EN</a>
+    </div>
+  </header>
 
-  <img src="Bmwikifront.png" alt="Black Mesa Logo" class="logo">
+  <!-- 소개 -->
+  <section>
+    <h1>블랙 메사란 무엇인가?</h1>
+    <p>
+      블랙 메사 연구 시설은 뉴멕시코 사막 깊숙이 위치한 세계적 수준의 연구 단지로, 구 미사일 사일로 단지를 개조하여 건설되었습니다.<br>
+      공식적으로는 공군 기지로 알려져 있으나, 내부적으로는 순수 과학부터 응용 과학까지 방대한 범위의 연구가 이루어지고 있습니다.
+    </p>
 
-  <h1>블랙 메사는 무엇인가요?</h1>
+    <h2>연구 분야</h2>
+    <ul>
+      <li>이론 물리학 및 응용 수학</li>
+      <li>방사선 및 원자력 연구</li>
+      <li>레이저 공학 및 유체 역학</li>
+      <li>로봇공학 및 유전학</li>
+      <li>동물학 및 생물학</li>
+      <li>화학 및 첨단 소재</li>
+      <li>수력 및 에너지 연구</li>
+    </ul>
+    <p>추가적으로 HEV 슈트 개발, 로켓 및 위성 발사 시험, 폐기된 ICBM 발사 시설 재활용을 통해 미래 우주 과학에도 기여하고 있습니다.</p>
 
-  <p>블랙 메사 연구 시설은 뉴멕시코 사막 깊은 곳, 과거 미사일 사일로 단지를 개조하여 세워진 세계적 수준의 연구 단지입니다.<br>
-  민간에는 공군 기지로 알려져 있지만, 내부에서는 순수 과학부터 응용 과학까지 전 분야의 연구가 진행되고 있습니다.</p>
+    <h2>출입구</h2>
+    <p>블랙 메사 시설의 출입은 엄격히 제한되며, 승인된 몇몇 검문소를 통해서만 접근이 가능합니다.</p>
+    <img src="20250907140800_1.jpg" 
+     alt="Black Mesa Entrance" 
+     style="max-width:600px; height:auto; display:block; margin:10px auto; border:2px solid #444; border-radius:6px;">
 
-  <h2>연구 범위</h2>
-  <ul>
-    <li>이론 물리학 및 응용 수학</li>
-    <li>방사선 및 핵 연구</li>
-    <li>레이저 공학 및 유압학</li>
-    <li>로봇 공학 및 유전학</li>
-    <li>동물학 및 생물학</li>
-    <li>화학 및 첨단 소재 과학</li>
-    <li>수력 발전 및 에너지 연구</li>
-  </ul>
+    <h2>정부 협력</h2>
+    <ul>
+      <li><b>DOE (에너지부):</b> 핵, 방사선, 원자로 보안 감독</li>
+      <li><b>DOD (국방부):</b> 군사 기술 연구 및 로켓 실험 지원</li>
+    </ul>
+    <p>미 해병대와 DOE 보안군이 시설의 안전을 보장합니다.</p>
 
-  <p>또한, 저희 연구소는 HEV 보호복 개발, 고도화된 로켓 및 인공위성 발사 실험, 나아가 버려진 ICBM 미사일 발사 기지의 활용을 통한 미래 우주 과학 발전에 기여하고 있습니다.</p>
+    <h2>자급적 운영 체계</h2>
+    <ul>
+      <li>보안: 자체 경찰, SSF, FRTOU 전술 부대</li>
+      <li>소방·구조: 전담 소방 및 응급 구조팀</li>
+      <li>의료: 병원, 정신과, 응급 치료</li>
+      <li>인프라: 자체 발전소, 공항, 물류국(BMTA), 항공국(BMAA)</li>
+      <li>지원: 구내 식당, 기숙사, 케이터링 서비스</li>
+    </ul>
 
-  <h2>연혁 및 계보</h2>
-  <ul>
-    <li>
-      리건 스트라우스 박사 (1955–1966)<br>
-      <img src="redaction-seal-stamp-grunge-vector-45043819.png" alt="검열 이미지" class="redacted"><br>
-      초기 시설 창립자이자 강압적 리더십으로 알려짐.
-    </li>
-    <li>
-      칼레비 풀키넨 박사 (1966–1992)<br>
-      <img src="redaction-seal-stamp-grunge-vector-45043819.png" alt="검열 이미지" class="redacted"><br>
-      연구 효율과 내부 신뢰도에서 가장 성공적인 행정가.
-    </li>
-    <li>
-      월리스 브린 박사 (1992–현재)<br>
-      <img src="20250907140517_1.jpg" alt="월리스 브린 박사">
-	  외교 안정에서 성공적인 행정가.
-    </li>
-  </ul>
+    <h2>연구 및 실험 분야</h2>
+    <p>우리 시설은 다음과 같은 폭넓은 과학·기술 프로젝트를 수행합니다:</p>
+    <ul>
+      <li>이론 물리학, 방사선 연구, 레이저, 유체 역학</li>
+      <li>로봇공학, 유전학, 동물학, 화학</li>
+      <li>수력, 응용 수학, 재료 과학</li>
+      <li>HEV/PCV 개발 및 군사 장비 연구</li>
+      <li>로켓 및 위성 발사 시험</li>
+    </ul>
+  </section>
 
-  <h2>몇 안 되는 공식 입구</h2>
-  <p>블랙 메사 연구소의 출입은 극도로 제한되어 있으며, 소수의 인증된 게이트를 통해서만 가능합니다.</p>
-  <img src="20250907140800_1.jpg" alt="블랙 메사 입구">
+  <!-- 연혁 -->
+  <section>
+    <h2>연혁</h2>
+    <p>블랙 메사 연구 시설(BMRF)은 1955년 블랙 메사 코퍼레이션에 의해 설립되었으며, 공공·민간 파트너십을 기반으로 과학 및 공학 연구를 수행해 왔습니다. 1960년대 이후 연구 인프라를 확충하면서 학술 및 산업 협력을 넓혀왔으며, 현재는 첨단 과학, 공학 제조, 시설 운영, 안전 및 보안을 아우르는 통합 연구 단지로 자리매김했습니다.</p>
+  </section>
 
-  <h2>정부와의 긴밀한 협력</h2>
-  <ul>
-    <li><b>DOE (미 에너지부):</b> 원자력, 방사선, 실험 원자로 관리 및 보안 감독</li>
-    <li><b>DOD (미 국방부):</b> 군사 기술, 무기 체계 연구, 항공 및 미사일 실험, 보안</li>
-  </ul>
-  <p>미 해병대와 DOE 보안 부대가 시설의 안전을 보장합니다.</p>
+  <!-- 관리자 -->
+  <section>
+    <h2>관리자</h2>
+    <div class="admins">
+      <div class="admin-card">
+        <img src="redaction-seal-stamp-grunge-vector-45043819.png" alt="REDACTED">
+        <h3>리건 스트라우스 박사 (1955–1966)</h3>
+        <p>블랙 메사의 초대 행정관으로, 시설의 기초를 세웠습니다. 1966년 건강상의 이유로 퇴임했습니다.</p>
+      </div>
+      <div class="admin-card">
+        <img src="redaction-seal-stamp-grunge-vector-45043819.png" alt="REDACTED">
+        <h3>칼레비 풀키넨 박사 (1966–1982)</h3>
+        <p>블랙 메사 연구 시설에서 가장 큰 성과를 거둔 행정관으로 평가됩니다. 정상적으로 퇴임했습니다.</p>
+      </div>
+      <div class="admin-card">
+        <img src="20250907140517_1.jpg" alt="Wallace Breen">
+        <h3>월리스 브린 박사 (1982–현재)</h3>
+        <p>외교적 감각을 발휘하여 시설을 성장시키며 현재까지 재임 중입니다.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>자급자족적 운영</h2>
-  <ul>
-    <li>보안 부대 (자체 경찰, SSF, FRTOU)</li>
-    <li>소방서 및 구조대</li>
-    <li>병원 및 정신과 등 의료 부서</li>
-    <li>발전소, 항공 시설, BMTA, BMAA</li>
-    <li>식당, 기숙사, 케이터링 부서 등 생활 기반 시설</li>
-  </ul>
+  <!-- 조직도 -->
+  <section>
+    <h2>조직도</h2>
+    <button class="accordion">관리부서 (Administrative Department) — 행정관: 월리스 브린</button>
+    <div class="panel">
+      <button class="accordion"><a href="https://black-mesa-security-officer.github.io/blackmesa-security/index.html">보안부 (Security Division)</a> — 사령관: Raymond Cole</button>
+      <div class="panel">
+        <p>교통국 (Transit Authority) — 국장: Michael “Mike” Daugherty</p>
+        <p>항공국 (Aviation Authority) — 국장: Karen Alvarez</p>
+        <p>일반 보안</p>
+        <p><a href="https://black-mesa-security-officer.github.io/blackmesa-ssf/index.html">특수 보안부대 (SSF)</a> — 지휘관: Colin Mercer</p>
+      </div>
+      <button class="accordion"><a href="https://black-mesa-security-officer.github.io/blackmesa-research/index.html">연구개발부 (R&D Sector)</a> — 수장: Dr. Harold G. Kleiner</button>
+      <div class="panel">
+        <p>과학팀</p>
+        <p><a href="https://black-mesa-security-officer.github.io/blackmesa-engineering/index.html">엔지니어링 및 제조부</a> — 수장: Eng. Marcus Levington</p>
+      </div>
+      <button class="accordion">시설 운영 (Facility Operations) — 총괄: Robert McKenna</button>
+      <div class="panel">
+        <p>식당·케이터링 — 책임자: Helen Ward</p>
+        <p>폐기물 처리 — 책임자: Frank Kowalski</p>
+        <p>유지보수 — 책임자: George Ramirez</p>
+        <p>IT & 네트워크 — 책임자: Samuel Cho</p>
+        <p>물류 & 운송 — 책임자: David Harlow</p>
+        <p>항공 운영 — 책임자: Col. Richard Halpern</p>
+        <p>원자로 운영 — 책임자: Dr. Elias Brandt</p>
+		<p><a href="https://black-mesa-security-officer.github.io/blackmesa-medical/index.html">의료부</a> — 책임자: Dr. Linda Voss</p>
+      </div>
+      <button class="accordion">비상 대응 지휘부 (First Response Incident Command) — 지휘관: Raymond Cole</button>
+      <div class="panel">
+        <p>소방·구조부 — 책임자: Thomas Delgado</p>
+        <p>전술 작전부 (FRTOU) — 지휘관: Capt. Alan Rourke</p>
+      </div>
+      <p><a href="https://black-mesa-security-officer.github.io/blackmesa-doe/index.html">DOE 보안군</a> — 외부 인력</p>
+    </div>
+  </section>
 
-  <h2>부서 소개</h2>
-  <ul>
-    <li><a href="https://black-mesa-security-officer.github.io/blackmesa-security/index.html">보안부</a></li>
-    <li><a href="https://black-mesa-security-officer.github.io/blackmesa-engineering/index.html">엔지니어링 및 제조부</a></li>
-    <li><a href="https://black-mesa-security-officer.github.io/blackmesa-medical/index.html">의료부</a></li>
-    <li><a href="https://black-mesa-security-officer.github.io/blackmesa-research/index.html">연구개발부</a></li>
-	<li><a href="https://black-mesa-security-officer.github.io/blackmesa-doe/index.html">DOE 보안군</a></li>
-	<li><a href="https://black-mesa-security-officer.github.io/blackmesa-ssf/index.html">특수 보안군</a></li>
-  </ul>
-
-  <h2>연구 및 실험 분야</h2>
-  <p>블랙 메사는 다음과 같은 첨단 분야에서 활동합니다:</p>
-  <ul>
-    <li>이론 물리학, 방사선, 레이저, 유압</li>
-    <li>로봇 공학, 유전학, 동물학, 화학</li>
-    <li>수력 발전, 응용 수학, 소재 과학</li>
-    <li>HEV/PCV 등 방호복 및 군사 장비 개발</li>
-    <li>로켓 및 위성 발사 실험</li>
-  </ul>
-
-  <hr>
-  <p style="text-align: center; font-size: 14px;">© 2025 Black Mesa Research Facility. All Rights Reserved.</p>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function(e) {
+        if (e.target.tagName.toLowerCase() === 'a') return;
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel) {
+          panel.style.display = (panel.style.display === "block") ? "none" : "block";
+        }
+      });
+    }
+  </script>
 </body>
 </html>
